@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+
+#  need to import this module don't know why it loosed
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
