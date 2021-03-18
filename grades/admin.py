@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Quarter
+from .models import Quarters, Subjects
 
 # Register your models here.
-admin.site.register(Quarter)
+admin.site.register(Quarters)
