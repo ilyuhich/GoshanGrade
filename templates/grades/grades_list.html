@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все оценки</title>
+</head>
+<body>
+    <h3 align="center">Все оценки Георгия</h3>
+    <table border="2px" align="center">
+        <caption>Таблица оценок господина Георгия</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Дата оценки</th>
+                <th>Учетный период</th>
+                <th>Предмет</th>
+                <th>Оценка</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grade in grades_list %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ grade.grade_date }}</td>
+                    <td>{{ grade.grade_quarter }}</td>
+                    <td>{{ grade.grade_subject }}</td>
+                    <td>{{ grade.grade }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>

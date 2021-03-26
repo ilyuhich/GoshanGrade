@@ -11,3 +11,5 @@ def hello_message(request):
 
 class AllGrades(ListView):
     model = Grades
+    context_object_name = 'grades_list'
+    ordering = ['grade_date']
